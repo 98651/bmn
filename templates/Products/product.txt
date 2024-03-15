@@ -1,0 +1,132 @@
+<!-- Card Deign -->
+
+<div class="cards">
+  <div class="card">
+    <img src="{% static images/img2.png%}" alt="Image 1">
+    <div class="card-content" style="margin: 0;">
+      <h2>Charcoal</h2>
+      <div class="custom-btn">
+        <a href="#"><button>Read More</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="images/img5.png" alt="Image 2">
+    <div class="card-content">
+      <h2>Oil</h2>
+      <div class="custom-btn">
+        <a href="#"><button>Read More</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="images/img3.png" alt="Image 3">
+    <div class="card-content">
+      <h2>Electronis</h2>
+      <div class="custom-btn">
+        <a href="#"><button>Read More</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="image4.jpg" alt="Image 4">
+    <div class="card-content">
+      <h2>Food</h2>
+      <div class="custom-btn">
+        <a href="#"><button>Read More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Products -->
+<div class="container">
+  <div class="product">
+    <img src="{% static 'images/products/5.png' %}" alt="Description of Product 1" style="height: -webkit-fill-available;width: inherit;">
+  </div>
+  <div class="description">
+    <h2>Product 1 Description</h2>
+    <p>This is a description of the first product. Add any details you want to highlight about this product.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="description">
+    <h2>Product 2 Description</h2>
+    <p>This is a description of the second product. Add any details you want to highlight about this product.</p>
+  </div>
+  <div class="product">
+    <img src="{% static 'images/products/2.png' %}" alt="Description of Product 2" style="height: -webkit-fill-available;width: inherit;">
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <div class="product">
+    <img src="{% static 'images/products/6.png' %}" alt="Description of Product 3" style="height: -webkit-fill-available;width: inherit;">
+  </div>
+  <div class="description">
+    <h2>Product 1 Description</h2>
+    <p>This is a description of the first product. Add any details you want to highlight about this product.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="description">
+    <h2>Product 2 Description</h2>
+    <p>This is a description of the second product. Add any details you want to highlight about this product.</p>
+  </div>
+  <div class="product">
+    <img src="{% static 'images/products/42.png' %}" alt="Description of Product 2" style="height:180; width: inherit;">
+  </div>
+</div>
+
+
+
+<div class="one">
+  <div class="centered">
+    <img src="{% static 'images/products/45.png' %}" alt="Description of Product 1">
+    <div class="description1">
+      <h2>Product 1 Description</h2>
+      <p>This is a description of the first product. Add any details you want to highlight about this product.</p>
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="product">
+    <img src="{% static 'images/products/2.png' %}" alt="Description of Product 1">
+  </div>
+  <div class="description">
+    <h2>Product 1 Description</h2>
+    <p>This is a description of the first product. Add any details you want to highlight about this product.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="description">
+    <h2>Product 2 Description</h2>
+    <p>This is a description of the second product. Add any details you want to highlight about this product.</p>
+  </div>
+  <div class="product">
+    <img src="{% static 'images/products/46.png' %}" alt="Description of Product 2">
+  </div>
+</div>
+
+
+<div class="one">
+  <div class="centered">
+    <img src="{% static 'images/products/19.png' %}" alt="Description of Product 1">
+    <div class="description1">
+      <h2>Product 1 Description</h2>
+      <p>This is a description of the first product. Add any details you want to highlight about this product.</p>
+    </div>
+  </div>

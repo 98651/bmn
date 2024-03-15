@@ -1,0 +1,52 @@
+<html>
+{% load static %}
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <script src="https://kit.fontawesome.com/8fe048c345.js" crossorigin="anonymous"> </script>
+    <title>About Page</title>
+</head>
+<body>
+<header class="masthead" style="background-image: url('{% static 'images/new aboutus back/9.png' %}'); background-size: cover;">  <p class="masthead-intro"></p>
+  <h1 class="masthead-heading">ABOUT US!</h1>
+
+</header>
+<section class="intro">
+  <h1>Where We Come From</h1>
+    <p>Founded in 2021, <span class="bold">BMN General Trading L.L.C</span> is rooted in a diverse blend of experiences and backgrounds. Our journey began with a vision to connect cultures and markets, just like the diverse origins of our team members. We may not hail from the same place, but we all call <span class="bold">BMN General Trading L.L.C</span> our home.</p>
+</section>
+<section class="where-Im-from">
+  <h1>Our Passions</h1>
+    <p>In the past, our interests may have varied, much like the diverse range of products we offer. Some of us were passionate about different hobbies and interests, from gaming to coding, and even the vibrant world of K-Pop. But now, our shared passion is dedicated to the world of trade, commerce, and connecting businesses worldwide.</p>
+  <h1>Our Aspirations</h1>
+    <p>Our collective dream is to become versatile in the world of trading. We aspire to be your go-to partner for a wide array of goods and services, much like our journey to master the intricate nuances of the trading industry. Our goal is to provide both front-end and back-end solutions to meet your business needs effectively.</p>
+  <h1>Our Roots</h1>
+    <p>Our story began in 2021, marking the start of a new chapter in the world of trading. With a lineage that includes a web programmer, we have been surrounded by the world of programming from an early age. We've seen the impact it can make, and now, we're applying that expertise to transform your trading experiences.</p>
+  <h1>Our Soundtrack</h1>
+    <p>Just as we're passionate about trade, we're also passionate about music. We draw inspiration from different corners of the world, including the K-Pop phenomenon that has transcended borders. Like the music industry, we aim to bridge gaps and create harmony in the world of trading</p>
+</section>
+<section class="more-about-me" style="color: gold">
+  <h1>The only way to do great work is to love what you do.</h1>
+</section>
+  <footer class="content-footer">
+
+
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="{% url 'index' %}" style="color: black">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="{% url 'profile' %}" style="color: black">Profile</a></li>
+        <li class="menu__item"><a class="menu__link" href="{% url 'contact' %}" style="color: black">Contact us</a></li>
+    </ul>
+       <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/" style="color: black">Facebook</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://www.instagram.com/" style="color: black">Instagram</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://wa.me/+971523854303" style="color: black">Whatsapp</a></li>
+        <li class="menu__item"><a class="menu__link" href="mailto:sales@bmntrading.ae?subject=Feedback&cc=anotheremail@example.com&bcc=hiddenemail@example.com&body=Hello%20there!" style="color: black" >Email</a></li>
+    </ul>
+     <p style="opacity: 1;">&copy; 2023 BMN General Trading LLC. All Rights Reserved.</p>
+    <p style="opacity: 0.10;"></p>
+</footer>
+
+
+</body>
+</html>

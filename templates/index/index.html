@@ -1,0 +1,425 @@
+{% load static %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMN Company Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/product.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="{% static 'images/image.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'lib/lightbox/css/lightbox.min.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+    <style>
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+.snip1533 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #9e9e9e;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid #d2652d;
+}
+
+.snip1533 *,
+.snip1533 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+  padding: 13% 10% 12%;
+}
+
+.snip1533 figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #d2652d;
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.snip1533 h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.snip1533 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+
+/* Demo purposes only */
+  
+body {
+  text-align: center;
+}
+    </style>
+
+</head>
+<body>
+         <a href="https://wa.me/message/+971523854303" class="btn-whatsapp-pulse">
+	        <i class="fab fa-whatsapp"></i>
+        </a>
+
+    <header class="header">
+        <a href="#" class="logo"><img src="{% static 'images/image.png' %}" alt="Logo"></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" style="color: black;">home</a></li>
+                <li><a href="{% url 'about' %}" style="color: black;">About us</a></li>
+                <li><a href="{% url 'products' %}" style="color: black;">products</a></li>
+                <li><a href="{% url 'contact' %}" style="color: black;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section id="home" class="home">
+      <h1><img src="{% static 'images/image.png' %}" alt="Logo" style="height: 50;"></h1>
+      <h2>BMN General Trading</h2>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </section>
+</dev>
+  <section id="about" class="about">
+    <h1 class="heading">About Us</h1>
+    <div class="row">
+        <div class="content"; >
+
+            <h3>Your Trading Partner</h3>
+            <p style="text-transform: none;">We are BMN General Trading, a dynamic company with a passion for diversity in trade.
+                <br>Discover the endless possibilities with BMN General Trading, your trusted partner in global commerce.</br>
+                Our commitment to excellence and customer satisfaction drives us to continuously explore new possibilities in the world of trade</p>
+            <a href="{% url 'about' %}"><button class="btn">Read More</button></a>
+        </div>
+    </div>
+  </section>
+
+  <div class="pt-5 pb-5" style="background-color: #f2f2f2;">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" id="service" >
+          <h1>Our Services</h1>
+          <p style="text-transform: none;">At BMN General Trading, we are dedicated to providing a comprehensive range of services to meet the diverse needs of our clients.
+              <br>Our commitment to excellence and customer satisfaction drives everything we do  Explore our services below:.
+            </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-truck"></i></span>
+            <h6>Efficient Wholesale Distribution</h6>
+            <p style="text-transform: none;">Our streamlined and efficient wholesale distribution network spans local and international markets. We ensure that products reach their destination reliably and on time, making us the trusted choice for businesses of all sizes.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-magic"></i></span>
+            <h6>Tailored Strategies for Success</h6>
+            <p style="text-transform: none;">Our team of experts specializes in tailoring trading strategies to your unique needs. We analyze market trends, identify opportunities, and craft customized solutions that align perfectly with your business objectives, ensuring you remain competitive and profitable.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-check"></i></span>
+            <h6>Unwavering Commitment to Quality and Innovation</h6>
+            <p style="text-transform: none;"> Quality assurance is at the core of our services. We implement rigorous quality control measures to guarantee that every product meets the highest industry standards. Furthermore, our dedication to innovation keeps us at the forefront of market trends, allowing us to provide you with cutting-edge solutions that drive growth and success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <section class="counters">
+    <div class="container">
+      <div>
+            <i class="far fa-clock fa-4x"></i>
+            <div class="counter" data-target="1350">24/7</div>
+            <h3>Working Hours</h3>
+        </div>
+        <div>
+            <i class="fas fa-gift fa-4x"></i>
+            <div class="counter" data-target="720">30+</div>
+            <h3>Completed Delivery</h3>
+        </div>
+        <div>
+            <i class="fas fa-users fa-4x"></i>
+            <div class="counter" data-target="480">30+</div>
+            <h3>Happy Clients</h3>
+        </div>
+        <div>
+            <i class="fas fa-award fa-4x"></i>
+            <div class="counter" data-target="120">10</div>
+            <h3>Awards Received</h3>
+        </div>
+    </div>
+</section> 
+<div class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head-1 col-sm-12" style="text-align: center;">
+          <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> portfolio </h4>
+
+          <p style="text-transform: none;">Explore our diverse profile, showcasing our extensive range of products and services. From premium charcoal, firewoods and another items to customized trading solutions, our portfolio exemplifies our commitment to excellence and innovation. Each entry reflects our dedication to meeting your unique needs and exceeding your expectations. Discover the breadth of our capabilities and the quality that defines <br>BMN General Trading.</br>
+            </p>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+
+          <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-cube"></i></span>
+            <h6>Charcoal</h6>
+
+            <p> Explore charcoal's raw beauty, light mastery, portraiture, abstracts, and techniques in this captivating showcase.<br><br><br></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-tree"></i></span>
+            <h6>Firewood</h6>
+            <p>Embrace the cozy allure of firewood: your essential companion for warmth and outdoor adventures!<br><br><br></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_six"><i class="fas fa-utensils"></i></span>
+            <h6>choice is yours</h6>
+            <p>From essentials to extravagance, find your perfect match among our captivating collection.<br><br><br></p>
+          </div>
+        </div>
+      </div>
+    </div>--&gt;
+</div>
+
+
+<div class="communicate">
+    <h3>Got questions or feedback? We're here to help.</h3>
+    <p>  Contact us anytime for assistance, inquiries, or collaboration. </p>
+    <a href="#contact"><button class="btn">Contact Now</button></a>
+</div>
+
+<!--  reviwes -->
+
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p>Exceptional trading partner: BMN General Trading LLC. combines professionalism, transparency, and industry expertise to deliver tailored solutions and unparalleled customer satisfaction</p>
+    </blockquote>
+    <h3>Wisteria Ravenclaw</h3>
+    <h4>Google Inc.</h4>
+  </figcaption>
+</figure>
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p>Exemplifying professionalism, transparency, and expertise, this trading entity delivers tailored solutions and unwavering dedication, setting a standard of excellence in the industry.</p>
+    </blockquote>
+    <h3>Karim bin Said</h3>
+    <h4>Facebook</h4>
+  </figcaption>
+</figure>
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p>Renowned for their professionalism and commitment to transparency, this trading firm excels in delivering tailored solutions and unparalleled customer satisfaction, setting a benchmark in the industry. </p>
+    </blockquote>
+    <h3>Adam Al-Sheikh</h3>
+    <h4>Twitter</h4>
+  </figcaption>
+</figure>
+
+ <!-- product card -->
+
+<p> </p>
+
+ <div class="container">
+  
+  <div class="product-card">
+  <div class="product-img img-one"></div>
+  <div class="product-text">
+    <h3>Charcoal</h3>
+    <p>premium Charcoal</p>
+  </div>
+  <div class="product-cart">
+    <a href="{% url "charcoal" %}"><button type="button">Explore</button></a>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-img img-two"></div>
+  <div class="product-text">
+    <h3>Oil and Gas</h3>
+    
+    <p>High quality </p>
+  </div>
+  <div class="product-cart">
+    <a href="{% url "oil" %}"><button type="submit">Explore</button></a>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-img img-three"></div>
+  <div class="product-text">
+    <h3>Kitchen Equipments</h3>
+    <p>Best quality </p>
+  </div>
+  <div class="product-cart">
+    <a href="{% url "kitchen" %}"><button type="submit" style="color: whitesmoke; background-color: blueviolet;">Explore</button></a>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-img img-four"></div>
+  <div class="product-text">
+    <h3>Food Products</h3>
+    <p>Drings, Foods, Etc....</p>
+  </div>
+  
+  <div class="product-cart">
+    <a href="{% url "food" %}"><button type="submit">Explore</button></a>
+  </div>
+</div>
+</div>
+
+
+
+
+<section id="contact" class="contact">
+    <h1 class="heading">get in touch</h1>
+</section>
+<div class="contact-in">
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3606.1252139964104!2d55.620554!3d25.333578999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDIwJzAwLjkiTiA1NcKwMzcnMTQuMCJF!5e0!3m2!1sen!2sae!4v1697438988214!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact-form">
+        <form action="https://formspree.io/f/xbjvqgzb" method="post">
+            <input type="text" name="name" placeholder="Name" class="contact-form-txt" required="">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required="" placeholder="Contact number" maxlength="10" class="contact-form-phone">
+            <input type="email" name="email" placeholder="Email" class="contact-form-email" required="">
+            <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required=""></textarea>
+            <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+        </form>
+    </div>
+    </div>
+
+    <section class="faq">
+      <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
+      <div class="row">
+          <div class="accordion-container">
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3> Do you offer bulk or wholesale pricing for your products?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>Yes, We provide bulk and wholesale pricing options for our products, including charcoals, firewoods, and kitchen equipment.
+                          If you're interested in purchasing larger quantities for your business or organization, please reach out to our sales team or customer support.
+                          They will be happy to assist you with pricing details, minimum order quantities, and any other wholesale-related inquiries.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How long it takes to delevery?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>The delivery time varies depending on factors such as your location, the chosen shipping method, and the packing time.
+                          Typically, it can range from a few days to a few weeks. For precise delivery estimates, check with the seller during the checkout process.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How do I associate with your Company?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>The process begins when you contact us with your requirements. We analyze your requirements and respond to you.
+                          On the basis of the further discussion, you can choose an engagement model that suits you the best.
+                          After that, we begin the process of Packing.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>Can you help me to arange everything start to end?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>Yes. We can handle everything.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>When do I pay?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>For most Orders, equal payments are made at start and balance before delevery.
+                          We accept Cash, and Bank Transfers only.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+         <footer class="section lw-footer">
+            <div class="text-center mt-5">
+                 <p class="footer-alt mb-0 f-14" style="
+                 background-color: black;
+                 height: 30;
+                 padding: 10;
+             ">&copy; 2023 © BMN, All Rights Reserved</p>
+            </div>
+
+
+         </footer>
+
+</body>
+</html>
