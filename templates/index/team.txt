@@ -1,0 +1,222 @@
+<!-- OUR TEAM 
+    <section class="team" >
+       <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>
+       <p></p>
+       <div class="row">
+           <div class="card">
+               <div class="image">
+                   <img src="{% static 'images/pexels-andrea-piacquadio-845434.jpg' %}" alt="Team member 1">
+
+               </div>
+            <div class="info">
+                <h3> IMAM </h3>
+                <span> Managing Director </span>
+             <div class="icons">
+                 <a href="mailto:smmohamed44@gmail.com" class="ion-ios-email"></a>
+                 <a href="https://wa.me/971523854303" class="fab fa-whatsapp"></a>
+                 <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="row">
+     <div class="card">
+         <div class="image">
+             <img src="{% static 'images/pexels-andrea-piacquadio-845434.jpg' %}" alt="Team member 2">
+
+         </div>
+         <div class="info">
+             <h3> Ahamed </h3>
+             <span> Manager </span>
+             <div class="icons">
+                 <a href="mailto:smmohamed44@gmail.com" class="ion-ios-email"></a>
+                 <a href="https://wa.me/971523854303" class="fab fa-whatsapp"></a>
+                 <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+             </div>
+         </div>
+     </div>
+ </div>
+<div class="row">
+     <div class="card">
+         <div class="image">
+            <img src="{% static 'images/pexels-andrea-piacquadio-845434.jpg' %}" alt="Team member 1">
+         </div>
+         <div class="info">
+             <h3> Faizul </h3>
+             <span> Sales Team Head </span>
+             <div class="icons">
+                 <a href="mailto:smmohamed44@gmail.com" class="ion-ios-email"></a>
+                 <a href="https://wa.me/971523854303" class="fab fa-whatsapp"></a>
+                 <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                 <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="row">
+     <div class="card">
+         <div class="image">
+             <img src="{% static 'images/pexels-andrea-piacquadio-845434.jpg' %}" alt="Team member 1">
+         </div>
+         <div class="info">
+             <h3> Mohamed </h3>
+             <span> Sales Team Head</span>
+             <div class="icons">
+                 <a href= "mailto:smmohamed44@gmail.com" class="ion-ios-email"></a>
+                 <a href="https://wa.me/971523854303" class="fab fa-whatsapp"></a>
+                 <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                 <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+             </div>
+         </div>
+     </div>
+ </div> 
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .team{
+    min-width: 100vw;
+    min-height: 95vh;
+    text-align: center;
+    background-color: #222;
+}
+
+.team .heading{
+    color: #00bfff;
+}
+
+.team .heading::before, .team .heading::after{
+    border-color: #00bfff;
+}
+
+.team .row{
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .row .card{
+    height: 35rem;
+    width: 25rem;
+    background-color: #fff;
+    text-align: center;
+    margin: 5rem 5rem;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-reflect: below 5px linear-gradient(transparent 70%, #0004);
+    transition: 0.5s;
+}
+
+.team .row .card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+.team .row .card .image{
+    margin: 1rem 0;
+    padding-top: 4rem;
+}
+
+.team .row .card .image img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    border: .5rem solid #fff;
+    box-shadow: 0 0 .5rem rgba(0,0,0,.3);
+    object-fit: cover;
+}
+
+.team .row .card .info h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.team .row .card .info span{
+    font-size: 1.8rem;
+    color: #00bfff;
+}
+
+.team .row .card .info .icons a{
+    margin-top: 4rem;
+    padding-top: 0 1rem;
+    font-size: 2rem;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.team .row .card .info .icons .fa-envelope-f:hover, .footer .icons .fa-envelope-f:hover{
+    color: #4267B2;
+    text-decoration: none;
+}
+
+.team .row .card .info .icons .fa-whatsapp:hover, .footer .icons .fa-whatsapp:hover{
+    color: #2867B2;
+    text-decoration: none;
+}
+
+.team .row .card .info .icons .fa-instagram:hover, .footer .icons .fa-instagram:hover{
+    color: #C13584;
+    text-decoration: none;
+}
+
+.team .row .card .info .icons .fa-linkedin:hover, .footer .icons .fa-linkedin:hover{
+    color: #2867B2;
+    text-decoration: none;
+}
+
+.team .row .card::before, .team .row .card::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 13.5rem;
+    width: 13.5rem;
+    z-index: -1;
+}
+
+.team .row .card::before{
+    background: #00bfff;
+    top: -3rem;
+    right: -4rem;
+}
+
+.team .row .card::after{
+    background: #ccc;
+    bottom: -3rem;
+    left: -4rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
